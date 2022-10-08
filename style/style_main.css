@@ -1,0 +1,355 @@
+/* 폰트 */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Manrope:300,400,500,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overpass&display=swap");
+/* reset css */
+* {
+	box-sizing: border-box;
+}
+ul {
+	list-style: none;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+}
+/* default css */
+body {
+	font-family: "Montserrat", sans-serif;
+	color: #222;
+	font-size: 15px;
+	margin: 0;
+	height: 100vh;
+	background-color: #fff;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "S-Core_Dream", "Montserrat";
+}
+p {
+	font-family: "S-Core_Dream", sans-serif;
+}
+/* Entire layout */
+.cd-section {
+	height: 100vh;
+}
+.cd-section > div {
+	height: 100%;
+	position: relative;
+}
+.content {
+	background-color: #ddd;
+	position: absolute;
+	width: calc(100% - 40px);
+	height: calc(100% - 80px);
+	left: 20px;
+	bottom: 20px;
+	overflow: hidden;
+}
+/* hadder */
+header {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 5;
+}
+.gnb_inner {
+	width: calc(100% - 40px);
+	margin: 0 auto;
+	height: 60px;
+	line-height: 60px;
+}
+.logo {
+	float: left;
+}
+.logo img {
+	margin-top: -5px;
+	width: 150px;
+	filter: drop-shadow(3px 3px 4px);
+}
+.gnb {
+	float: right;
+}
+.menu {
+	display: none;
+}
+.menu a {
+}
+.slogan {
+	font-size: 18px;
+	font-style: italic;
+}
+.trigger {
+	display: none;
+}
+/* hiring */
+.btn-intro {
+	position: fixed;
+	right: 50px;
+	bottom: 50px;
+	color: #fff;
+	background-color: #000;
+	padding: 10px 20px;
+	border-radius: 20px;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+	transition: 1s;
+}
+.btn-intro:active {
+	transform: scale(0.2);
+}
+.btn-intro .fa {
+	transform: rotateY(180deg);
+}
+/* 컨텐트 개별 디자인 */
+/* 1번 홈섹션 */
+.home-inner {
+	border: 1px solid #000;
+	width: 100%;
+	height: 100%;
+	background-image: url("../img/WallpaperDog.jpg");
+	background-position: 50% 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+}
+.home-inner .title {
+	position: absolute;
+	z-index: 2;
+	width: 50%;
+	right: 5%;
+	bottom: 5%;
+	background-color: rgba(255, 255, 255, 0.7);
+	padding: 0 15px;
+	box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+	transition: 0.3s;
+}
+.home-inner .title:hover {
+	bottom: 7%;
+}
+.home-inner .title:hover ~ .back-filter {
+	backdrop-filter: blur(5px);
+}
+.home-inner .title h1 {
+	font-size: 36px;
+	font-family: "Montserrat";
+}
+.home-inner .title p {
+	font-size: 18px;
+	font-family: Montserrat;
+}
+.back-filter {
+	width: 100%;
+	height: 100%;
+	border: 1px solid #000;
+	backdrop-filter: blur(0px);
+	transition: 0.3s;
+	opacity: 1;
+}
+/* 2번 ABOUT 섹션 */
+.about-inner {
+	width: 100%;
+	height: 100%;
+	background-image: url("../img/WallpaperDog.jpg");
+	background-position: 50% 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	perspective: 1500px;
+}
+.about-text {
+	position: absolute;
+	top: 50%;
+	left: 5%;
+	/* transform: translateY(-50%); */
+	height: 700px;
+	width: 40%;
+	background-color: rgba(255, 255, 255, 0.7);
+	transform: rotateY(40deg) translateY(-50%);
+	padding: 30px 30px;
+	box-shadow: -10px 5px 20px rgba(255, 255, 255, 0.7);
+	border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+.about-text h2 {
+	margin: 0;
+}
+.about-text h3 {
+}
+.about-text p {
+}
+.about-inner .back-filter {
+}
+.about-slide {
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	right: 100px;
+	top: 40%;
+	transform: translateY(-50%);
+}
+.about-slide > div {
+}
+.about-slide img {
+	width: 400px;
+}
+/* 3번 CONTECT  */
+.choice {
+	border: 5px solid #000;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.5s;
+}
+.choice:hover li {
+	filter: grayscale(1);
+}
+.choice li {
+	height: 100%;
+	flex: 1;
+	transition: 0.5s;
+	position: relative;
+}
+.choice li:hover {
+	flex: 5;
+	filter: none;
+}
+.choice li:hover .choice-item {
+	bottom: 0;
+}
+.choice-item {
+	background-color: #000;
+	padding: 20px;
+	position: absolute;
+	width: 100%;
+	bottom: -300px;
+	left: 0;
+	transition: 1s;
+}
+.choice-cat {
+	background-image: url("../img/WallpaperDog.jpg");
+	background-position: 50% 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.choice-dog {
+	background-image: url("../img/WallpaperDog.jpg");
+	background-position: 50% 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.choice-item h2 {
+	margin: 0;
+	color: #fff;
+	font-weight: 600;
+}
+.choice-item p {
+	color: #fff;
+	font-family: Montserrat;
+	width: 100%;
+}
+.choice-item div {
+	background-color: #fff;
+	width: fit-content;
+	padding: 5px 10px;
+	border-radius: 3px;
+	transition: 0.3s;
+}
+.choice-item div:hover {
+	box-shadow: -3px 3px 5px #aaa;
+	transform: translate(5px, -5px);
+}
+/* 4번 CONTACT & FOOTER */
+.contact-inner {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.contact-feature {
+	width: 80%;
+	height: 80%;
+	display: flex;
+}
+.contact-feature > div {
+	width: 50%;
+	padding: 20px;
+}
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.contact-form h3 {
+	font-size: 30px;
+}
+.contact-form h3 b {
+	color: skyblue;
+	text-shadow: 0 0 2px #222;
+}
+.contact-form p {
+	font-size: 14px;
+}
+.send-box {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+.send-box label {
+	font-size: 18px;
+	font-weight: 500;
+	margin: 10px 0 3px;
+}
+.send-box label span {
+	color: crimson;
+}
+.send-box textarea,
+.send-box input {
+	border-radius: 5px;
+	padding: 5px 10px;
+	border: none;
+	outline: none;
+}
+.send-box textarea:hover,
+.send-box textarea:focus,
+.send-box input:hover,
+.send-box input:focus {
+	box-shadow: 0 0 5px skyblue;
+}
+.send-box button{
+	margin: 10px 0 0;
+	padding: 5px 10px;
+	font-size: 16px;
+	font-weight: 600;
+	font-family: Montserrat;
+	background-color: skyblue;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	transition: .3s;
+}
+.send-box button:hover{
+	text-shadow: 0 0 2px #222;
+}
+.contact-info {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+}
+.contact-info h4{
+	font-size: 18px;
+}
+.contact-info h4 b{
+	color: aqua;
+	text-shadow: 0 0 2px #222;
+}
