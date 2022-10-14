@@ -56,4 +56,44 @@ $(function () {
 		$(this).addClass("active")
 		$(this).siblings().removeClass("active")
 	});
+
+	// 강아지 품종 슬라이드
+	$(".breed-img").slick({
+		dots: true,
+		infinite: true,
+		speed: 1000,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+	});
+
+	$(".breed-thumb-slide").slick({
+		dots: true,
+		infinite: true,
+		speed: 1000,
+		slidesToShow: 5,
+		slidesToScroll: 1,
+	});
+
+	$(".tab").click(function(){
+		if($(this).hasClass("tab1")){
+			$(".faq-1").addClass("active")
+			$(".faq-1").siblings().removeClass("active")
+		}
+		if($(this).hasClass("tab2")){
+			$(".faq-2").addClass("active")
+			$(".faq-2").siblings().removeClass("active")
+		}
+		if($(this).hasClass("tab3")){
+			$(".faq-3").addClass("active")
+			$(".faq-3").siblings().removeClass("active")
+		}
+		if($(this).hasClass("tab4")){
+			$(".faq-4").addClass("active")
+			$(".faq-4").siblings().removeClass("active")
+		}
+		if($(this).hasClass("tab5")){
+			$(".faq-5").addClass("active")
+			$(".faq-5").siblings().removeClass("active")
+		}
+	})
 });

@@ -1,0 +1,337 @@
+/* 폰트 */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Manrope:300,400,500,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overpass&display=swap");
+/* reset css */
+* {
+	box-sizing: border-box;
+}
+ul {
+	list-style: none;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+}
+/* default css */
+body {
+	font-family: "Montserrat", sans-serif;
+	color: #222;
+	font-size: 15px;
+	margin: 0;
+	height: 100vh;
+	background-color: #fff;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "S-Core_Dream", "Montserrat";
+}
+p {
+	font-family: "S-Core_Dream", sans-serif;
+}
+* {
+	box-sizing: border-box;
+}
+/* dog.html */
+.container {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1920px;
+}
+section {
+	width: 100%;
+	height: 100vh;
+}
+.content {
+	width: 100%;
+	height: 100%;
+	max-width: 1440px;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+#main {
+	width: 100%;
+	max-width: 1920px;
+	max-height: 1080px;
+	position: relative;
+}
+.blur-box {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	backdrop-filter: blur(10px);
+}
+.main-title {
+	position: absolute;
+	padding: 10px 30px;
+	top: 50%;
+	left: 50%;
+	max-width: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(255, 255, 255, 0.8);
+	border-radius: 10px;
+}
+.main-title h2 {
+	font-size: 32px;
+}
+.main-title p {
+	font-size: 18px;
+}
+/* notice */
+#notice {
+	background-image: url(../img/gray_back.jpg);
+	background-position: 50% 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.notice-inner {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-direction: column;
+}
+.notice-list {
+	margin: 10px 0;
+    padding: 5px 30px 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+}
+.notice-list h2 {
+	font-size: 40px;
+}
+.notice-list-item {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.notice-list-item p {
+	font-family: Manrope;
+}
+.notice-list-item .date {
+}
+.notice-list-item .text {
+	width: 700px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+/* 메인콘텐츠 */
+#quick-menu{
+	height: fit-content;
+	padding: 50px;
+}
+.quick-menu-inner{
+	background-color: antiquewhite;
+	padding: 50px 30px;
+}
+.quick-menu-inner h2{
+	font-size: 50px;
+}
+.quick-list{
+	padding: 5px 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 40px;
+}
+.quick-list-item{
+	width: 350px;
+	height: 400px;
+	position: relative;
+}
+.quick-list-item>div{
+	height: 200px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	position: absolute;
+	background-color: #fff;
+	top: 50%;
+	transform: translateY(-50%);
+	transition: .5s;
+	border-radius: 10px;
+}
+.item-thumbnail{
+	width: 100px;
+	height: 100px;
+	background-color: #fff;
+	border-top: 5px solid rgba(0,0,0,.1);
+	border-left: 5px solid rgba(0,0,0,.1);
+	border-radius: 50%;
+	box-shadow: 5px 5px 5px rgba(0,0,0,.1);
+}
+.item-title{
+	font-size: 28px;
+	margin-bottom: 0;
+	text-shadow: 0 0 3px crimson;
+}
+.quick-list-item .item-top{
+	z-index: 5;
+	box-shadow: 0 5px 0px rgba(0,0,0,.1);
+	background-color: rgba(255, 166, 0, 0.95);
+	color: #fff;
+}
+.quick-list-item .item-bottom{
+	z-index: 4;
+	padding: 5px 15px;
+}
+.item-bottom .item {
+	padding: 3px 10px;
+	background-color: orange;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+}
+.quick-list-item:hover .item-top{
+	transform: translateY(-100%);
+	border-radius: 10px 10px 0 0;
+	box-shadow: 0 5px 10px rgba(0,0,0,.1);
+}
+.quick-list-item:hover .item-bottom{
+	transform: translateY(0);
+	border-radius: 0 0  10px 10px;
+}
+/* 서브 콘텐츠1 */
+#sub-content1{
+	height: 800px;
+}
+.sub-content-inner{
+	padding: 10px 20px;
+	background-color: #fafafa;
+	box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+.sub-content-inner h2{
+	font-size: 36px;
+}
+.dog-breed{
+	width: 100%;
+	height: 400px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: aliceblue;
+	padding: 10px 20px;
+	border-radius: 15px;
+	box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+.breed-info{
+	width: 50%;
+	padding: 10px 20px;
+}
+.breed-info p{
+	font-size: 14px;
+}
+.breed-info strong{
+	font-size: 16px;
+}
+.breed-img{
+	width: 40%;
+	height: 90%;
+	background-color: #ccc;
+	border-radius: 1em 0 1em 0;
+	box-shadow: 0 0 10px rgba(0,0,0,.1);
+	overflow: hidden;
+}
+.breed-img>div{
+	width: 100%;
+	height: 100%;
+}
+.breed-img>div img{
+	width: 100%;
+}
+.breed-thumb-slide{
+	padding: 10px 20px;
+	margin-top: 30px;
+	background-color: aliceblue;
+	border-radius: 10px;
+	box-shadow: 0 5px 5px rgba(0,0,0,.1);
+}
+.thumb-item{
+	padding: 5px 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+.thumb-item>img{
+	width: 50px;
+	height: 50px;
+	background-color: #ccc;
+	border-radius: 50%;
+	overflow: hidden;
+	float: left;
+}
+.thumb-item p{
+	float: right;
+}
+/* 서브 콘텐츠2 */
+.sub-content-inner{
+	position: relative;
+}
+.tab-list{
+	border: 2px solid rgba(0,0,0,.1);
+	border-radius: 10px;
+	padding: 15px 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+	background-color: #fff;
+}
+.tab-list .tab{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-grow: 1;
+	background-color: aliceblue;
+	box-shadow: 3px 3px 5px rgba(0,0,0,.1);
+	padding: 15px;
+	border-radius: 5px;
+	font-size: 24px;
+}
+.faq-wrap{
+	position: relative;
+	width: 100%;
+	height: 500px;
+	margin: 50px 0;
+	overflow-y: scroll;
+}
+.faq{
+	width: 100%;
+	position: absolute;
+	padding: 10px 20px;
+	border-radius: 10px;
+	background-color: #fff;
+	display: none;
+}
+.faq.active{
+	display: block;
+}
+.faq details{
+	margin: 25px 0;
+	padding: 10px 20px;
+	background-color: aliceblue;
+	box-shadow: 3px 3px 5px rgba(0,0,0,.1);
+}
+.faq details p{
+	padding: 5px 30px;
+	font-size: 18px;
+}
+.faq details summary{
+	font-size: 24px;
+	padding: 5px 10px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid rgba(0,0,0,.3);
+}

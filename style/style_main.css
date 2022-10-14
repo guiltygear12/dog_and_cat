@@ -234,13 +234,13 @@ header {
 	transition: 1s;
 }
 .choice-cat {
-	background-image: url("../img/WallpaperDog.jpg");
+	background-image: url("../img/렉돌\ 성년기.jpg");
 	background-position: 50% 50%;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 .choice-dog {
-	background-image: url("../img/WallpaperDog.jpg");
+	background-image: url("../img/웰시코기\ 성년기.jpg");
 	background-position: 50% 50%;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -273,11 +273,18 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	background-image: url("../img/말티즈\ 성년기.jpg");
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 .contact-feature {
 	width: 80%;
 	height: 80%;
 	display: flex;
+	background-color: rgba(255, 255, 255, 0.9);
+	padding: 20px;
+	border-radius: 20px;
 }
 .contact-feature > div {
 	width: 50%;

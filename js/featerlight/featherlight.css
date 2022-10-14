@@ -76,6 +76,8 @@ html.with-featherlight {
 .featherlight .featherlight-inner {
 	/* make sure its visible */
 	display: block;
+	width: 1440px;
+	height: 800px;
 }
 
 /* don't show these though */
@@ -147,6 +149,13 @@ html.with-featherlight {
 
 		padding: 10px 10px 0;
 		border-bottom: 10px solid transparent;
+	}
+
+	.featherlight .featherlight-inner {
+		/* make sure its visible */
+		display: block;
+		width: 95vw;
+		height: 800px;
 	}
 }
 
