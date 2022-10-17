@@ -217,6 +217,17 @@ header {
 	transition: 0.5s;
 	position: relative;
 }
+.choice li h2,
+.choice li p{
+	font-size: 10px;
+	transition: .5s;
+}
+.choice li.active h2{
+	font-size: 30px;
+}
+.choice li.active p{
+	font-size: 16px;
+}
 .choice li:hover {
 	flex: 5;
 	filter: none;
@@ -233,17 +244,25 @@ header {
 	left: 0;
 	transition: 1s;
 }
-.choice-cat {
-	background-image: url("../img/렉돌\ 성년기.jpg");
+.choice-cat,
+.choice-dog,
+.choice-movie,
+.choice-community{
 	background-position: 50% 50%;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
+.choice-cat {
+	background-image: url("../img/렉돌\ 성년기.jpg");
+}
 .choice-dog {
 	background-image: url("../img/웰시코기\ 성년기.jpg");
-	background-position: 50% 50%;
-	background-size: cover;
-	background-repeat: no-repeat;
+}
+.choice-movie {
+	background-image: url("../img/gray_back.jpg");
+}
+.choice-community {
+	background-image: url("../img/WallpaperDog.jpg");
 }
 .choice-item h2 {
 	margin: 0;

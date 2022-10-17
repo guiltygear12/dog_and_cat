@@ -52,7 +52,7 @@ $(function () {
 	});
 
 	// 강아지 고양이 선택
-	$(".choice-dog, .choice-cat").hover(function () {
+	$(".choice li").hover(function () {
 		$(this).addClass("active")
 		$(this).siblings().removeClass("active")
 	});

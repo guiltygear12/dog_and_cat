@@ -92,11 +92,12 @@ html.with-featherlight {
 	position: absolute;
 	z-index: 9999;
 	top: 0;
-	right: 0;
+	right: 10px;
 
 	/* dimensions: 25px x 25px */
 	line-height: 25px;
-	width: 25px;
+	width: 50px;
+	height: 50px;
 
 	/* styling */
 	cursor: pointer;
