@@ -1,0 +1,75 @@
+section {
+	width: 100%;
+	max-width: 1920px;
+	margin: 0 auto;
+}
+/* title */
+.title {
+	height: 200px;
+	overflow: hidden;
+}
+.title-inner{
+}
+.title-inner h2 {
+	font-size: 48px;
+	width: fit-content;
+	text-align: center;
+	margin: 50px auto;
+	font-family: Manrope;
+	position: relative;
+	font-weight: 500;
+}
+.title-inner h2::before {
+	content: "";
+	width: 50%;
+	height: 3px;
+	background-color: #000;
+	position: absolute;
+	top: 50%;
+	left: -52%;
+}
+.title-inner h2::after {
+	content: "";
+	width: 50%;
+	height: 3px;
+	background-color: #000;
+	position: absolute;
+	top: 50%;
+	right: -52%;
+}
+/* text */
+.text{
+}
+.text-inner{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.text-form{
+    width: 95%;
+    margin: 0 auto;
+    padding: 15px;
+}
+.form-row{
+    padding: 10px 5px;
+    display: flex;
+}
+.form-row label{
+    width: 15%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+.form-row input{
+    padding: 5px 10px;
+    width: 85%;
+}
+.form-row textarea{
+    padding: 5px 10px;
+    width: 85%;
+    height: 500px;
+}
+.text-form .submit{
+    width: 100%;
+    padding: 5px 10px;
+}
