@@ -69,9 +69,8 @@ header {
 	float: left;
 }
 .logo img {
-	margin-top: -5px;
-	width: 150px;
-	filter: drop-shadow(3px 3px 4px);
+	margin-top: 10px;
+	width: 130px;
 }
 .gnb {
 	float: right;
