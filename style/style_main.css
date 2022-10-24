@@ -217,14 +217,14 @@ header {
 	position: relative;
 }
 .choice li h2,
-.choice li p{
+.choice li p {
 	font-size: 10px;
-	transition: .5s;
+	transition: 0.5s;
 }
-.choice li.active h2{
+.choice li.active h2 {
 	font-size: 30px;
 }
-.choice li.active p{
+.choice li.active p {
 	font-size: 16px;
 }
 .choice li:hover {
@@ -246,7 +246,7 @@ header {
 .choice-cat,
 .choice-dog,
 .choice-movie,
-.choice-community{
+.choice-community {
 	background-position: 50% 50%;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -258,10 +258,10 @@ header {
 	background-image: url("../img/웰시코기\ 성년기.jpg");
 }
 .choice-movie {
-	background-image: url("../img/gray_back.jpg");
+	background-image: url("../img/WallpaperDog.jpg");
 }
 .choice-community {
-	background-image: url("../img/WallpaperDog.jpg");
+	background-image: url("../img/기타/게시판3.jpg");
 }
 .choice-item h2 {
 	margin: 0;
@@ -350,7 +350,7 @@ header {
 .send-box input:focus {
 	box-shadow: 0 0 5px skyblue;
 }
-.send-box button{
+.send-box button {
 	margin: 10px 0 0;
 	padding: 5px 10px;
 	font-size: 16px;
@@ -360,9 +360,9 @@ header {
 	color: #fff;
 	border: none;
 	cursor: pointer;
-	transition: .3s;
+	transition: 0.3s;
 }
-.send-box button:hover{
+.send-box button:hover {
 	text-shadow: 0 0 2px #222;
 }
 .contact-info {
@@ -371,10 +371,10 @@ header {
 	align-items: flex-start;
 	flex-direction: column;
 }
-.contact-info h4{
+.contact-info h4 {
 	font-size: 18px;
 }
-.contact-info h4 b{
+.contact-info h4 b {
 	color: aqua;
 	text-shadow: 0 0 2px #222;
 }
