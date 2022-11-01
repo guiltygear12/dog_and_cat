@@ -175,4 +175,8 @@
     .contact-info h4{
         margin: 0;
     }
+	/* 용품 페이지 */
+	.list-inner{
+		border: none;
+	}
 }

@@ -58,13 +58,6 @@ $(function () {
 	});
 
 	// 강아지 품종 슬라이드
-	$(".breed-img").slick({
-		dots: true,
-		infinite: true,
-		speed: 1000,
-		slidesToShow: 1,
-		slidesToScroll: 1,
-	});
 
 	$(".breed-thumb-slide").slick({
 		dots: true,
@@ -94,6 +87,17 @@ $(function () {
 		if($(this).hasClass("tab5")){
 			$(".faq-5").addClass("active")
 			$(".faq-5").siblings().removeClass("active")
+		}
+	})
+	// 품종 선택
+	$(".thumb-item").click(function(){
+		if($(this).hasClass("thumb-1")){
+			$(".breed1").addClass("active")
+			$(".breed1").siblings().removeClass("active")
+		}
+		if($(this).hasClass("thumb-2")){
+			$(".breed2").addClass("active")
+			$(".breed2").siblings().removeClass("active")
 		}
 	})
 });

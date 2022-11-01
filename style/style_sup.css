@@ -36,14 +36,16 @@ section{
     right: -52%;
 }
 .title-img{
-    border: 1px solid #000;
     width: 100%;
     height: 100%;
     transition: .5s;
-    background-image: url("../img/WallpaperDog.jpg");
+    background-image: url("../img/메인\ 강아지\ 사진.jpg");
     background-position: 50% 0%;
     background-size: 120%;
     background-repeat: no-repeat;
+}
+.title-img.cat{
+    background-image: url("../img/메인\ 고양이\ 사진.jpg");
 }
 .title-img:hover{
     background-position: 50% 50%;
@@ -93,8 +95,21 @@ section{
 .cat .list-item{
     background-image: url("../img/고양이용품/스크래쳐.jpg");
 }
+.cat .list-item:nth-of-type(2){
+    background-image: url("../img/고양이용품/캣\ 타워.png");
+}
+.cat .list-item:nth-of-type(3){
+    background-image: url("../img/고양이용품/캣\ 휠.jpg");
+}
+
 .dog .list-item{
     background-image: url("../img/강아지용품/하네스.jpg");
+}
+.dog .list-item:nth-of-type(2){
+    background-image: url("../img/강아지용품/강아지\ 물\,먹이\ 그릇.jpg");
+}
+.dog .list-item:nth-of-type(3){
+    background-image: url("../img/강아지용품/펜스.jpg");
 }
 .list-item>div{
     height: 100%;
