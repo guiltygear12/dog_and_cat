@@ -116,67 +116,74 @@
 	}
 	/* 메인컨텐츠 */
 	/* 1. 홈 */
-    .home-inner{
-        height: 1000px;
-    }
-    .home-inner .title{
-        width: 100%;
-        right: 0;
-        bottom: 20%;
-    }
-    .home-inner .title:hover {
-        bottom: 15%;
-    }
+	.home-inner {
+		height: 1000px;
+	}
+	.home-inner .title {
+		width: 100%;
+		right: 0;
+		bottom: 20%;
+	}
+	.home-inner .title:hover {
+		bottom: 15%;
+	}
 	/* 2. 어바웃 */
-    .about-inner{
-        height: 100vh;
-        perspective: none;
-    }
-    .about-text{
-        width: 95%;
-        left: 2.5%;
-        top: 10%;
-        transform:translate(0);
-        box-shadow: none;
-    }
-    .about-slide{
-        display: none;
-    }
+	.about-inner {
+		height: 100vh;
+		perspective: none;
+	}
+	.about-text {
+		width: 95%;
+		left: 2.5%;
+		top: 10%;
+		transform: translate(0);
+		box-shadow: none;
+	}
+	.about-slide {
+		display: none;
+	}
 	/* 3. 메인컨텐츠 */
-    .content{
-        height: 100vh;
-    }
-    .choice{
-        flex-direction: column;
-    }
-    .choice li{
-        height: 50px;
-        width: 100%;
-    }
+	.content {
+		height: 100vh;
+	}
+	.choice {
+		flex-direction: column;
+	}
+	.choice li {
+		height: 50px;
+		width: 100%;
+	}
 	/* 4. 컨텐트및 푸터 */
-    #contact>div>.content{
-        height: 1250px;
-    }
-    .contact-inner{
-        height: 2000px;
-    }
-    .contact-feature{
-        height: 100%;
-        width: 100%;
-        background-color: #efefef;
-        padding: 10px;
-    }
-    .contact-feature{
-        flex-direction: column;
-    }
-    .contact-feature > div{
-        width: 100%;
-    }
-    .contact-info h4{
-        margin: 0;
-    }
+	#contact > div > .content {
+		height: 1250px;
+	}
+	.contact-inner {
+		height: 2000px;
+	}
+	.contact-feature {
+		height: 100%;
+		width: 100%;
+		background-color: #efefef;
+		padding: 10px;
+	}
+	.contact-feature {
+		flex-direction: column;
+	}
+	.contact-feature > div {
+		width: 100%;
+	}
+	.contact-info h4 {
+		margin: 0;
+	}
 	/* 용품 페이지 */
-	.list-inner{
+	.list-inner {
 		border: none;
+	}
+	/* 강아지 */
+	#quick-menu {
+		display: none;
+	}
+	#sub-content1{
+		/* height: 350px; */
 	}
 }
